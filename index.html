@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>PROJETO 2</title>
+</head>
+<body>
+    <!-- Aqui fiz o cabeçalho para definir o titulo -->
+    <header>
+        <h1>CODIFICADOR E DECODIFICADOR </h1>
+    </header>
+    <!-- Comecei com uma div container para organizar meu código no css-->
+    <div class="container">
+        <!-- Abri o form que é pedido no projeto e para fazer as solicitações ao usuário-->
+        <form class="formulario" name="formulario">
+            <!-- Abri uma tag select para fazer a caixa de seleção de criptogragia -->
+            <label for=""> Metódo desejado:
+                <br>
+                    <select id="escolha">
+                        <option value="nulo" id="nulo" disabled selected>Selecione opção</option> 
+                        <option id="cifraC" value="cifraC">Cifra de César</option>
+                        <option id="base" value="base">Base64</option>
+                    </select>
+                    <br>
+                    <!-- Na tag label para criar a caixa de mensagem que o usuário que criptografar-->
+                    <label for="digite">Escreva sua mensagem
+                        <br>
+                        <input type="text" id="texto">
+                        <br>
+                        <!-- aqui chamo o incremento-->
+                <div style="display: none;" id="selecione">
+                    <input type="number" id="number" default="0" min="1" value="1">
+                </div>
+                <!-- aqui chamo com o type radio para codificar ou decodificar -->
+                <input type="radio" name="r1" id="code" value="code">Codificar
+
+                <input type="radio" name="r1" id="decode" value="decode">Decodificar
+                <div class="botao">
+            <!-- confirmo minha opção-->
+                    <button id="button" type="submit">Confirma</button>
+                    <!-- recebo minha mensagem  -->
+                 <span id="mensagem"></span>   
+                </div>
+
+        </form>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
